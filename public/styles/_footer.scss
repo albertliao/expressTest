@@ -1,0 +1,219 @@
+html{
+    overflow-x: hidden;
+}
+.marFooterLeft a{
+    margin-left: -10px;
+}
+.marFooterLeft h5{
+    font-size: 16px;
+}
+.footer a{
+    color:#fff;
+}
+.footerTop{
+    width: 100%;
+    background: #000;
+    float: left;
+}
+.footer .nav > li > a{
+    padding:3px 10px;
+}
+.footer .socialsiteIcons li a {
+font-size: 28px;
+}
+.footer .socialsiteIcons{
+    float: right;
+}
+.footer h5{
+    color: #fff;
+}
+.footerWrap{
+    background: #424343;
+    padding: 15px;
+    width: 100%;
+    float: left;
+}
+.footerWrap p{
+    color: #7a7a7a;
+}
+.footerBotLine {
+    border-bottom: 1px solid white;
+}
+.footerTop h5 strong,.footerTop .nav li a{
+    color: #fff;
+}
+.footerTop h5 strong a{
+    text-decoration: none;
+}
+.socialsiteIcons .nav li a{
+    font-size: 24px;
+    margin-right: 0px;
+	padding-bottom: 0px;
+	margin-top: -3px;
+}
+ .footerLinks li a{
+    padding: 10px 17.45px;
+ }
+ .footerWrap a{
+        color: #7a7a7a;
+        text-decoration: none;
+}
+.footerBotLine .socialsiteIcons ul.navbar-nav{
+        float: right;
+}
+.footer-links .navbar{
+    margin-left: -2.6%;
+}
+.footer-links li a{
+	padding: 2px 10px;
+    text-decoration: none;
+}
+.footerTop .mar10{
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+.footer-links .mar10{
+     border-bottom: 0px solid #ddd;
+}
+
+@media screen and (max-width: 1279px){
+   .footer-bottom .socialsiteIcons{
+        clear: both;
+    }
+    .footer-bottom .socialsiteIcons ul{
+        display: block;
+    }
+    .footer-links .mar10{
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .footerTop .mar10{
+    }
+    .footer-links .navbar{
+        margin-left: -3.8%;
+    }
+    .footer-links .col-md-5 .navbar{
+        margin-left: -3.2%;
+    }
+    .footer-links .col-md-3 .navbar{
+         margin-left: -5.5%;
+    }
+    .footerLinks li{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .footerLinks li:first-child,.footerLinks li:last-child{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width: 990px){
+     .footer-links .navbar{
+        margin-left: -5.5%;
+    }
+    .footer-links .col-md-5 .navbar{
+        margin-left: -4.8%;
+    }
+
+}
+@media screen and (min-width: 1003px) and (max-width: 1040px){
+    body > div:nth-child(3) > div > div > div.footerTop > div > div.row > div > ul > li:nth-child(7){
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 1003px) and (min-width: 800px){
+    body > div:nth-child(3) > div > div > div.footerTop > div > div.row > div > ul > li:nth-child(6){
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 839px) and (min-width: 768px){
+    body > div:nth-child(3) > div > div > div.footerTop > div > div.row > div > ul > li:nth-child(5){
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 767px){
+	 /** footer **/
+     .footerTop .mar10{
+        border-bottom: 0px solid #ddd;
+    }
+    .footer-links,.footerLinks{
+        display: none;
+    }
+
+   .socialsiteIcons .navbar-nav li{
+            float: left;
+
+            border: 0px;
+    }
+    .footer-bottom .socialsiteIcons .navbar-nav{
+       width: auto;
+       float: left !important;
+        margin: 0px auto;
+        clear: both;
+        margin-left: 28.33%;
+    }
+     .footerWrap p{
+            font-size: 12px;
+            float: none !important;
+            text-align: center;
+     }
+     .footerTop .mar10{
+        padding-top: 20px;
+        margin-bottom: 0px;
+     }
+
+}
+@media screen and (max-width: 580px){
+       .footer-bottom .socialsiteIcons .navbar-nav{
+        margin-left: 23.33%;
+    }
+
+}
+@media screen and (max-width: 539px){
+         .mobile-footer .socialsiteIcons ul{
+                margin-left: 0em;
+
+         }
+        .footer-bottom .socialsiteIcons .navbar-nav{
+             margin-left: 23.33%;
+        }
+       
+
+}
+@media screen and (max-width: 479px){
+    .footer-bottom .socialsiteIcons .navbar-nav{
+        margin-left: 18%;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .footer-bottom .socialsiteIcons .navbar-nav{
+         text-align: center;
+
+    }
+
+}
+@media screen and (max-width: 320px){  
+.footer-bottom .socialsiteIcons .navbar-nav{
+        margin-left: 1%;
+    }
+
+}
+@media screen and (max-width: 344px){  
+.footerWrap p{
+       
+        font-size: 10px;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 309px){  
+.footerWrap p{
+    
+        font-size: 9px;
+        text-align: left;
+    }
+}

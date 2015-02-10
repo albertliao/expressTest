@@ -1,0 +1,13 @@
+$icon-font-path: "../bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path:   "../bower_components/fontawesome/fonts";
+
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/fontawesome/scss/font-awesome.scss";
+
+@import "_bootstrapVariables.scss";
+@import "_fonts.scss";
+@import "_global.scss";
+@import "_navBar.scss";
+@import "_footer.scss";
+@import "_home.scss";
+@import "_vehicle.scss";
