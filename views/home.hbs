@@ -1,0 +1,168 @@
+<div class="MainContent">
+	<div ng-controller="HomeController">
+	    <div class="container container-fluid" >
+			
+		    <div class="row pos-relative">
+		        
+		        <div class="col-sm-12 homeCarousel pad-0" disable-ng-animate>
+		            <carousel interval="slideInterval">
+		                <slide ng-repeat="slide in slides" active="slide.active">
+	          				<img ng-src="\{{slide.image}}">
+	          				<div class="carousel-caption">
+	            				
+		                    </div>
+		                </slide>
+		            </carousel>
+		        </div>
+		        <div class="col-sm-4 hero-unit">
+		        	<h2>Kia Certified Pre-Owned</h2>
+		    		<h4>Quality, Affordability, Peace of Mind</h4>
+		    		<p>When you purchase a kia Certified Pre-Owned vehicle, you are choosing a quality automobile that you can trust at a price you can afford.
+					</p>
+		
+		  			<p> Scroll down to learn more or start searching for your pre-owned vehicle today.</p>
+		
+		            <a href="#LocalInventory" class="inventory"><span class="inventory-text">Search Local Inventory</span> <span class="fa fa-angle-right btn-arrow"></span></a>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="row">
+		    <div class="col-sm-12">
+				<div class="container container-fluid pad-0">
+					<ul class="promotionsBanner">
+						<li class="prev-banner inactive col-sm-1 desktop-arrow" ng-click="previousBanner($event)" ><a href="#">&lt;</a></li>
+					    <li class="col-xs-12 col-sm-4 col-md-3 menuBanner dropdown"  >
+					    	
+						        <a href="javascript:void(0);" ng-click="showExploreMenu($event)" class="dropdown-toggle menuBanner-link" data-toggle="dropdown">
+		 						<span class="dropdown-text">{{homepage.explore.heading}}</span>
+						        <span class="fa fa-angle-right mobile-arrow-right"></span>
+						        </a>
+						        <ul>
+						            <li><a href="{{homepage.explore.explore_links.0.url}}" ><span class="fa fa-angle-right"></span><span>{{homepage.explore.explore_links.0.text}}</span></a></li>
+						            <li><a href="{{homepage.explore.explore_links.1.url}}" ><span class="fa fa-angle-right"></span><span>{{homepage.explore.explore_links.1.text}}</span></a></li>
+						            <li><a href="{{homepage.explore.explore_links.2.url}}" ><span class="fa fa-angle-right"></span><span>{{homepage.explore.explore_links.2.text}}</span></a></li>
+						            <li><a href="{{homepage.explore.explore_links.3.url}}" ><span class="fa fa-angle-right"></span><span>{{homepage.explore.explore_links.3.text}}</span></a></li>
+						        </ul>
+						   
+					    </li>
+					    <li class="prev-banner inactive col-sm-1 mobile-arrow" ng-click="previousBanner($event)" ><a href="#">&lt;</a></li>
+					    <div class="animate-switch-container col-md-9 col-sm-9 pad-0"   ng-switch on="selection">
+
+					    <div class="col-md-12 bannerContainer pad-0" ng-show="desktopView">
+							    <div class="animate-switch" ng-switch-default>
+								    <li class="col-xs-12 col-sm-4 col-md-4">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.0.image}}" alt="{{homepage.promotions.0.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.0.url}}">{{homepage.promotions.0.promo_text}}</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-4 col-md-4">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								             <img src="{{homepage.promotions.1.image}}" alt="{{homepage.promotions.1.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.1.url}}">{{homepage.promotions.1.promo_text}}</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-4 col-md-4">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.2.image}}" alt="{{homepage.promotions.2.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.2.url}}">{{homepage.promotions.2.promo_text}}</a></h5>
+								        </div>
+								    </li>
+							    </div>
+							    <div class="animate-switch" ng-switch-when="second">
+								    <li class="col-xs-12 col-sm-4 col-md-4">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.3.image}}" alt="{{homepage.promotions.0.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.3.url}}">Promo 4</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-4 col-md-4 ">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								             <img src="{{homepage.promotions.4.image}}" alt="{{homepage.promotions.4.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.4.url}}">Promo 5</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-4 col-md-4">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.5.image}}" alt="{{homepage.promotions.5.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.5.url}}">Promo 6</a></h5>
+								        </div>
+								    </li>
+
+								  </div>
+							</div>
+							<!-- mobile view -->
+							<div class="col-xs-12 pad-0" ng-show="tabletView">
+							    <div class="animate-switch" ng-switch-default>
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.0.image}}" alt="{{homepage.promotions.0.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.0.url}}">{{homepage.promotions.0.promo_text}}</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								             <img src="{{homepage.promotions.1.image}}" alt="{{homepage.promotions.1.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.1.url}}">{{homepage.promotions.1.promo_text}}</a></h5>
+								        </div>
+								    </li>
+								</div>
+								<div class="animate-switch" ng-switch-when="second">
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.2.image}}" alt="{{homepage.promotions.2.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.2.url}}">{{homepage.promotions.2.promo_text}}</a></h5>
+								        </div>
+								    </li>
+							   
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.3.image}}" alt="{{homepage.promotions.3.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.3.url}}">{{homepage.promotions.3.promo_text}}</a></h5>
+								        </div>
+								    </li>
+								</div>
+							    <div class="animate-switch" ng-switch-when="third">
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								             <img src="{{homepage.promotions.4.image}}" alt="{{homepage.promotions.4.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.4.url}}">{{homepage.promotions.4.promo_text}}</a></h5>
+								        </div>
+								    </li>
+					
+								    <li class="col-xs-12 col-sm-6">
+								        <div class="banner">
+								            <!--<p>Find a Dealer</p>-->
+								            <img src="{{homepage.promotions.5.image}}" alt="{{homepage.promotions.5.alt_text}}"  />
+								            <h5><a href="{{homepage.promotions.5.url}}">{{homepage.promotions.5.promo_text}}</a></h5>
+								        </div>
+								    </li>
+
+								  </div>
+							</div>
+						</div>
+						 <li class="next-banner active col-sm-1" ng-click="nextBanner($event)"><a href="#">&gt;</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

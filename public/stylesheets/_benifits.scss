@@ -1,0 +1,137 @@
+$White-color : #ffffff;   /*White color for entire application*/
+$red-color:#c31926;/*Red color for entire application*/
+
+.benfits-hero{
+	clear: both;
+	background: #12171a;
+	position: relative;
+	
+	.img-responsive{
+		width: 100%;
+	}
+
+	.center-block{
+		width: 60%;
+		color: $White-color;
+		font-family: designk-light;	
+		h1{
+			font-size: 50px;
+			padding-top: 50px;	
+			text-align: center;
+			line-height: 60px;
+		}
+
+		
+		
+	}
+	.ProgramBenifits{
+			width: 565px;
+			font-size: 1.3em;
+			position: absolute;
+			bottom: 2%;
+			left: 2%;
+			color: $White-color;
+			h2{
+				
+				font-family: designk-light;	
+				font-size: 2em;
+			}
+			p{
+				font-family:designk-medium;
+				font-weight: normal;
+			 }
+		}
+	.relatedBrouchers{
+
+		position: absolute;
+		width: 227px;
+		right: 2%;
+		bottom: 2%;
+		color: $White-color;
+		.bordered{
+			border:#94999d 1px solid; 
+			.pull-left{
+				margin: 10px;
+			}
+			a{ margin: 10px; display:inline-block; padding-top: 10px; color: $White-color; font-family: designk-light}
+		}
+		h3{
+			font-family: designk-light;	
+			border-bottom:$red-color 6px solid; 
+			padding-bottom: 10px;
+		}
+
+
+	}
+
+
+}
+
+.benifits_gray_section{
+	background: #f7f7f7;
+	padding: 20px;
+	font-family: designk-light;	 
+	color: #3a3b3d;
+	.center-block{
+			width: 60%;
+			font-family: designk-light;	
+			h1{
+				font-size: 30px;
+				text-align: center;
+				line-height: 30px;
+			}
+
+			
+			
+		}
+	.row{
+		margin-top: 50px;
+		font-family: designk-medium;
+		li{
+			margin-bottom: 20px;
+		}
+	}
+
+
+}
+
+.whiteSections{
+	padding: 20px;
+	font-family: designk-medium;	 
+	color: #3a3b3d;
+	.col-md-4{text-align: center;}
+	img{margin:0 auto;}
+	h3{ text-transform:uppercase; margin-bottom: 20px; text-align: center;}
+
+
+
+}
+
+.moreAboutCertified{
+	padding: 20px;
+	font-family: designk-medium;
+	background: #989fa9;
+	color: $White-color;
+	.center-block{
+			width: 60%;
+			font-family: designk-light;	
+			margin-bottom: 40px;
+			h1{
+				font-size: 30px;
+				text-align: center;
+				line-height: 30px;
+			}
+
+			
+			
+		}
+
+	 a{
+	 	color:$White-color; 
+	 	font-size: 1.4em; 
+	 	margin-bottom: 20px;
+	 	img{display: inline-block; margin-right: 10px;}
+	 }
+
+
+}

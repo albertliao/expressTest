@@ -1,0 +1,65 @@
+{
+  "topNav": {
+    "item": [
+      {
+        "text": "About Certified",
+        "description": "",
+        "subItem": [
+          {
+            "text": "Benefits",
+            "description": "See all the benifits of owing a Kia Certified Pre-Owned Vehicle.",
+            "url": "/benifits"
+          },
+          {
+            "text": "Warranty",
+            "description": "Every Kia Certified pre-Owned Vehicle comes with a warranty"
+          },
+          {
+            "text": "Extended Protection Plans",
+            "description": "Additional Protection for your kia."
+          },
+          {
+            "text": "Kia Care Service Plan",
+            "description": "Plans that help keep your Kia in tip top shape.",
+            "url": "/kiacareservice"
+          },
+          {
+            "text": "Road Hazard Tire & Wheel Plans",
+            "description": "Plans to help keep your Kia on the road."
+          }
+        ]
+      },
+      {
+        "text": "Find a Dealer",
+        "description": "Find a dealer near you, get direction, contact them, and even have a live chat with them.",
+        "url": "/dealer"
+      },
+      {
+        "text": "Search Local Inventory",
+        "description": "Find availabele vehcles nearby,get a quick quote, request a test drive, and get financing options."
+      },
+      {
+        "text": "Shopping Tools",
+        "description": "",
+        "subItem": [
+          {
+            "text": "Special Offers",
+            "description": "See all available special offers for Kia certified pre-owned vehicles."
+          },
+          {
+            "text": "Apply for Credit",
+            "description": "Apply for credit and get an instant response."
+          },
+          {
+            "text": "Estimated Trade-In Value",
+            "description": "Find the value of your current vehicle and apply it towards your certified pre-owned Kia."
+          },
+          {
+            "text": "Payment Calculator",
+            "description": "Access our Exclusive Payment calculator tool to see what you can afford."
+          }
+        ]
+      }
+    ]
+  }
+}

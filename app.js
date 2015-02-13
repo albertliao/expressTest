@@ -6,14 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
 
+//route paths
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
+app.engine('hbs', expressHbs({extname:'hbs'}));
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
@@ -25,8 +25,8 @@ app.use(cookieParser());
 app.use(require('node-compass')({mode: 'expanded'}));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//routes
 app.use('/', routes);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

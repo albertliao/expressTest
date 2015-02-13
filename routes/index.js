@@ -1,57 +1,56 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
+var glob = require("glob");
+var fs = require("fs");
+var extend = require('util')._extend
 
-router.get('/', function(req, res){
-  res.render('index');
+//load in CPO CMS data
+var cpoData = {};
+var partialData = {};
+glob("./data/**/*.json", function(err, files) {
+    var loaded = 0;
+    files.forEach(function(file) {
+        var dir = path.dirname(file);
+        var filename = path.basename(file);
+        fs.readFile(file, 'utf8', function (err, data) {
+            if (err) {
+              console.log('Error: ' + err);
+              return;
+            }
+            cpoData = extend(cpoData,JSON.parse(data));
+            partialData = extend(partialData,JSON.parse(data));
+        });
+        console.log(dir+"/"+filename+" loaded");
+        loaded++;
+    });
+    cpoData.layout = 'cpo.hbs';
+    console.log(loaded + " files loaded");
 });
 
-router.get('/simple', function(req, res){
-  var data = {name: 'Gorilla'};
-  res.render('simple', data);
+router.get('/', function(req, res) {
+  res.render('home', cpoData);
 });
 
-router.get('/complex', function(req, res){
-  var data = {
-    name: 'Gorilla',
-    address: {
-      streetName: 'Broadway',
-      streetNumber: '721',
-      floor: 4,
-      addressType: {
-        typeName: 'residential'
-      }
-    }
-  };
-  res.render('complex', data);
+router.get('/dealer', function(req, res) {
+  res.render('dealer', cpoData);
 });
 
-router.get('/loop', function(req, res){
-  var basketballPlayers = [
-    {name: 'Lebron James', team: 'the Heat'},
-    {name: 'Kevin Durant', team: 'the Thunder'},
-    {name: 'Kobe Jordan',  team: 'the Lakers'}
-  ];
-  
-  var days = [
-    'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
-  ];
-  
-  var data = {
-    basketballPlayers: basketballPlayers,
-    days: days
-  };
-  
-  res.render('loop', data);
+router.get('/benifits', function(req, res) {
+  res.render('benifits', cpoData);
 });
 
-router.get('/logic', function(req, res){
-  var data = {
-    upIsUp: true,
-    downIsUp: false,
-    skyIsBlue: "yes"
-  };
-  
-  res.render('logic', data);
+router.get('/kiacareservice', function(req, res) {
+  res.render('kiacareservice', cpoData);
+});
+
+router.get('/partials/:name', function (req, res) {
+  var name = req.params.name;
+  res.render(name, partialData);
+});
+
+router.get('*', function (req, res) {
+    res.render('index', cpoData);
 });
 
 module.exports = router;

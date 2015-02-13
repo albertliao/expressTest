@@ -1,0 +1,72 @@
+{
+  "homepage": {
+    "content": {
+      "main_heading": "Kia Certified Pre-Owned",
+      "sub_heading": "Quality, Affordability, Peace of Mind",
+      "description": "When you purchase a Kia Certified Pre-Owned vehicle, you are choosing a quality automobile that you can trust at a price you can afford.<br /><br />Scroll down to learn more or start searching for your pre-owned vehicle today.",
+      "cta_text": "Search Local Inventory",
+      "cta_url": "http://kia-cpo.com/Vehicles.aspx",
+      "carousel_image": [
+        {
+          "image": "/images/car1.png"
+        },
+        {
+          "image": "/images/car1.png"
+        },
+        {
+          "image": "/images/car1.png"
+        },
+        {
+          "image": "/images/car1.png"
+        }
+      ]
+    },
+    "explore": {
+      "heading": "Explore",
+      "explore_links": [
+        {
+          "text": "Find a Dealer",
+          "url": "http://kia-cpo.com/Vehicles.aspx"
+        },
+        {
+          "text": "Get a Quote",
+          "url": "http://kia-cpo.com/Vehicles.aspx"
+        },
+        {
+          "text": "Payment Estimator",
+          "url": "http://kia-cpo.com/Vehicles.aspx"
+        },
+        {
+          "text": "Special Offers",
+          "url": "http://kia-cpo.com/Vehicles.aspx"
+        }
+      ]
+    },
+    "promotions": [
+      {
+        "image": "/images/promo1.png",
+        "alt_text": "Promo 1",
+        "promo_text": "Promo 1",
+        "url": "http://kia-cpo.com/Vehicles.aspx"
+      },
+      {
+        "image": "/images/promo2.png",
+        "alt_text": "Promo 2",
+        "promo_text": "Promo 2",
+        "url": "http://kia-cpo.com/Vehicles.aspx"
+      },
+      {
+        "image": "/images/promo3.png",
+        "alt_text": "Promo 3",
+        "promo_text": "Promo 3",
+        "url": "http://kia-cpo.com/Vehicles.aspx"
+      }
+    ],
+    "seo": {
+      "title": "Kia Certified Pre-Owned",
+      "description": "Find Kia Certified Pre-Owned Vehicle Inventory",
+      "keywords": "Kia,Kia Certified Pre-Owned,Kia CPO,Kia Certified Pre-Owned Vehicles,Kia CPO Vehicles",
+      "robots": ""
+    }
+  }
+}

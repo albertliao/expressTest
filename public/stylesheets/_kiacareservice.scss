@@ -1,0 +1,70 @@
+$White-color : #ffffff;   /*White color for entire application*/
+$red-color:#c31926;/*Red color for entire application*/
+$White-color : #ffffff;   /*White color for entire application*/
+$red-color:#c31926;/*Red color for entire application*/
+
+.kiacareserviceplans-hero{
+	clear: both;
+	background: #12171a;
+	position: relative;
+	
+	.img-responsive{
+		width: 100%;
+	}
+
+	.center-block{
+		width: 60%;
+		color: $White-color;
+		font-family: designk-light;	
+		h1{
+			font-size: 50px;
+			padding-top: 50px;	
+			text-align: center;
+			line-height: 60px;
+		}
+
+		
+		
+	}
+	.Programkiacareserviceplans{
+			width: 565px;
+			font-size: 1.3em;
+			position: absolute;
+			bottom: 2%;
+			left: 2%;
+			color: $White-color;
+			h2{
+				
+				font-family: designk-light;	
+				font-size: 2em;
+			}
+			p{
+				font-family:designk-medium;
+				font-weight: normal;
+			 }
+		}
+	.relatedBrouchers{
+
+		position: absolute;
+		width: 227px;
+		right: 2%;
+		bottom: 2%;
+		color: $White-color;
+		.bordered{
+			border:#94999d 1px solid; 
+			.pull-left{
+				margin: 10px;
+			}
+			a{ margin: 10px; display:inline-block; padding-top: 10px; color: $White-color; font-family: designk-light}
+		}
+		h3{
+			font-family: designk-light;	
+			border-bottom:$red-color 6px solid; 
+			padding-bottom: 10px;
+		}
+
+
+	}
+
+
+}

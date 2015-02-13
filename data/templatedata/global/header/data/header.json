@@ -1,0 +1,103 @@
+{
+  "header": {
+    "kia_logo": {
+      "kia_image": "/images/kia.png",
+      "kia_alt_text": "Kia",
+      "kia_url": "http://www.kia.com/"
+    },
+    "cpo_logo": {
+      "cpo_image": "/images/certified.png",
+      "cpo_alt_text": "Kia-CPO",
+      "cpo_url": "/"
+    },
+    "utility_nav": [
+      {
+        "text": "Search Local Inventory",
+        "url": "/kiacareservice"
+      },
+      {
+        "text": "Find a Dealer",
+        "url": "/benifits"
+      }
+    ],
+    "search_content": [
+      {
+        "text": "Find a Dealer",
+        "url": "http://kia-cpo.com",
+        "description": "Find a dealer near you, get directions, contact them, and even have a live chat with them."
+      },
+      {
+        "text": "Search Local Inventory",
+        "url": "http://kia-cpo.com",
+        "description": "Find available vehiclenearby, get a quick quote, request a test drive, and get financing options."
+      }
+    ],
+    "L1nav": [
+      {
+        "nav_text": "Fina a Dealer",
+        "url": "http://kia-cpo.com"
+      },
+      {
+        "nav_text": "Search Local Inventory",
+        "url": "http://kia-cpo.com"
+      },
+      {
+        "nav_text": "Shopping Tools",
+        "url": "http://kia-cpo.com",
+        "subNavItem": [
+          {
+            "text": "Special Offers",
+            "description": "See all Available offers",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Apply for Credit",
+            "description": "Apply for Credit and get an instant credit",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Estimated Trade in Value",
+            "description": "Find the value of your current vehicle and apply",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Payment Calculator",
+            "description": "Access our exclusive payment calculator",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          }
+        ]
+      },
+      {
+        "nav_text": "About Certified",
+        "url": "http://kia-cpo.com",
+        "subNavItem": [
+          {
+            "text": "Benefits",
+            "description": "See all Benefits of owning Kia CPO Vehicle",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Warranty",
+            "description": "Every Kia CPO vehicle comes with warranty",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Extended Protection Plus",
+            "description": "Additional Protection for your kia",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Kia Care Service Plan",
+            "description": "Plans that helps keep your kia in tip top shape",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Road Hazard Tire & Wheel Plans",
+            "description": "Plans to help keep your Kia on the road",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          }
+        ]
+      }
+    ]
+  }
+}
