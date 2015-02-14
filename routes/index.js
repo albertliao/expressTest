@@ -32,6 +32,10 @@ router.get('/', function(req, res) {
   res.render('home', cpoData);
 });
 
+router.get('/home', function(req, res) {
+  res.render('home', cpoData);
+});
+
 router.get('/dealer', function(req, res) {
   res.render('dealer', cpoData);
 });
