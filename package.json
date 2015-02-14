@@ -16,7 +16,7 @@
     "morgan": "~1.5.1",
     "node-compass": "0.2.3",
     "serve-favicon": "~2.2.0"
-  }
+  },
   "engines": {
       "node": "0.12.0",
       "npm": "2.6.0"
