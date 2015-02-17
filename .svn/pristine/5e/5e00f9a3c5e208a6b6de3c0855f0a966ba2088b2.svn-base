@@ -1,0 +1,14 @@
+<div data-status="\{{status}}" class="find-dealer">
+	<h1>FIND A DEALER</h1>
+	
+	  {{#each dealers}}
+	  <ul>
+	    <li><strong>{{this.dealer.name}}</strong></li>
+	    <li>{{this.dealer.address}}</li>
+	    <li>{{this.dealer.city}},{{this.dealer.state}} {{this.dealer.postalCode}}</li>
+	    <li>{{this.dealer.phoneNumber}}</li>
+	  </ul>
+	  {{/each}}
+
+</div>
+

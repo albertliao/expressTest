@@ -1,0 +1,140 @@
+{
+  "footer": {
+    "footer_link": [
+      {
+        "text": "About Kia",
+        "url": "http://www.kia.com/about"
+      },
+      {
+        "text": "Privacy / Legal (Update)",
+        "url": "http://www.kia.com/legal"
+      },
+      {
+        "text": "Contact Kia",
+        "url": "http://www.kia.com/contact"
+      },
+      {
+        "text": "Other Kia Sites",
+        "url": "http://www.kia.com/worldwide/"
+      },
+      {
+        "text": "Site Map",
+        "url": "http://www.kia.com/worldwide/"
+      },
+      {
+        "text": "MPG Information",
+        "url": "http://www.kia.com/worldwide/"
+      },
+      {
+        "text": "Recalls",
+        "url": "http://www.kia.com/worldwide/"
+      },
+      {
+        "text": "†Global Disclaimers",
+        "url": "http://www.kia.com/worldwide/"
+      }
+    ],
+    "social_media": [
+      {
+        "image": "/images/social_media/nav-social-twitter.png",
+        "alt_text": "Twitter",
+        "url": "https://twitter.com/kia"
+      },
+      {
+        "image": "/images/social_media/nav-social-instagram.png.jpg",
+        "alt_text": "Instagram",
+        "url": "http://instagram.com/kiamotorsusa/"
+      },
+      {
+        "image": "/images/social_media/nav-social-facebook.png",
+        "alt_text": "Facebook",
+        "url": "https://www.facebook.com/kia"
+      },
+      {
+        "image": "/images/social_media/nav-social-youtube.png",
+        "alt_text": "YouTube",
+        "url": "https://www.youtube.com/kia"
+      },
+      {
+        "image": "/images/social_media/nav-social-pinterest.png",
+        "alt_text": "Pinterest",
+        "url": "https://www.pinterest.com/kiamotorsusa/"
+      }
+    ],
+    "sitemap": [
+      {
+        "text": "KIA-CPO.COM",
+        "url": "http://kia-cpo.com",
+        "sublink": [
+          {
+            "text": "Home",
+            "url": "http://kia-cpo.com"
+          },
+          {
+            "text": "Find a Dealer",
+            "url": "http://kia-cpo.com/Dealers.aspx"
+          },
+          {
+            "text": "Search Local Inventory",
+            "url": "http://kia-cpo.com/Dealers.aspx"
+          }
+        ]
+      },
+      {
+        "text": "ABOUT CERTIFIED",
+        "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp",
+        "sublink": [
+          {
+            "text": "Benefits",
+            "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp"
+          },
+          {
+            "text": "Warranty",
+            "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp"
+          },
+          {
+            "text": "Extended Protection Plus",
+            "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp"
+          },
+          {
+            "text": "Kia Care Service Plan",
+            "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp"
+          },
+          {
+            "text": "Tire and Wheel Protection Plan",
+            "url": "http://kia-cpo.com/Information/JMAInformation.aspx?Page=Kiaoverview.asp"
+          }
+        ]
+      },
+      {
+        "text": "SHOPPING TOOLS",
+        "url": "http://kia-cpo.com/Vehicles.aspx",
+        "sublink": [
+          {
+            "text": "Special Offers",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Apply for Credit",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Estimated Trade in Value",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          },
+          {
+            "text": "Payment Estimator",
+            "url": "http://kia-cpo.com/Vehicles.aspx"
+          }
+        ]
+      }
+    ],
+    "copyright": "©2014 Kia Motors America, Inc.",
+    "adchoices": {
+      "text": "AdChoices",
+      "image": "/images/social_media/nav-footer-adchoice.png",
+      "alt_text": "AdChoices",
+      "url": "http://info.evidon.com/pub_info/826?v=1&nt=1&nw=false"
+    }
+  }
+}

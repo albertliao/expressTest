@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- Head section -->
+	<head>
+	{{> cpo_head }}
+	</head>
+
+	<!-- Body component -->
+	<body ng-app="cpo" ng-strict-di>    
+		<!-- Navigation component -->
+		{{> cpo_nav }}
+
+		<!-- Content component -->
+		<div ui-view class="contentSection">
+		  {{{ body }}}
+		</div>
+
+		<!-- Footer -->
+		{{> cpo_footer }}
+
+		<!-- JS Scripts -->
+		{{> cpo_js }}
+	</body>
+
+</html>

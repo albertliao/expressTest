@@ -1,0 +1,65 @@
+<div>
+	<div class="benfits-hero">
+		<div class="center-block">
+			<h1>Protect your investment and peace of mind when you purchase your Kia Vehicle with the extra coverage of Kia Care Service Plans.*</h1>
+		</div>	
+		<img src="../images/service_hero.png" class="img-responsive" />
+		<div class="ProgramBenifits">
+				
+				<p>Most vehicle factory warranties are valid only if you maintain your vehicle regularly. Kia Care Service Plans include valuable maintenance services that will help you keep your Certified Pre-Owned Kia running like new and ensure your vehicle remains qualified for factory warranty protection
+				</p>
+		</div>
+		<div class="relatedBrouchers">
+			<h3>Related Brouchers</h3>
+			<div class="bordered">
+					<img src="../images/KiaCarCareBrochure-Cover.png"/>
+					<a href="#" class="download"><span class="pull-left"><img src="../images/icon_download.png"/></span>Download brochure for more information</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="whiteSections">
+		<div class="row">
+			<div class="col-md-6">
+
+				
+				<h3>Standard Maintenance Plan</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+			</div>
+			<div class="col-md-6">
+				
+				<h3>Plus Maintenance Plan</h3>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+			</div>
+			<div class="col-md-12">
+
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p>
+						</div>
+			
+		</div>
+	</div>
+	<div class="moreAboutCertified">
+			<div class="center-block">
+				<h1>More About Certified Pre-Owned</h1>
+			</div>	
+			<div class="row">
+				<div class="col-md-3">
+					<a href="#"><img src="../images/black_arrow.png"/>Warranty</a>
+					<p>Every Kia Certified Pre-Owned vehicle comes with a warranty.</p>
+				</div>
+				<div class="col-md-3">
+					<a href="#"><img src="../images/black_arrow.png"/>Extended Protection Plans</a>
+					<p>Extended Protection Plans.</p>
+				</div>
+				<div class="col-md-3">
+					<a href="#"><img src="../images/black_arrow.png"/>Kia Care Service Plan</a>
+					<p>Plans that help keep your kia in tip top shape.</p>
+				</div>
+				<div class="col-md-3">
+					<a href="#"><img src="../images/black_arrow.png"/>Road Hazard Tire &amp; Wheel Plans</a>
+					<p>Plans to help keep your kia on the road.</p>
+				</div>
+			</div>
+
+	</div>
+</div>
