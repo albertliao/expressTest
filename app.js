@@ -11,6 +11,7 @@ var routes = require('./routes/index');
 
 var app = express();
 
+process.env.PWD = process.cwd();
 app.use(express.static(path.join(process.env.PWD, 'public')));
 
 // view engine setup
@@ -25,7 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(require('node-compass')({mode: 'expanded'}));
-process.env.PWD = process.cwd()
+
 
 
 //routes
