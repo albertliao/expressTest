@@ -1,14 +1,38 @@
-<div data-status="\{{status}}" class="find-dealer">
-	<h1>FIND A DEALER</h1>
-	
-	  {{#each dealers}}
-	  <ul>
-	    <li><strong>{{this.dealer.name}}</strong></li>
-	    <li>{{this.dealer.address}}</li>
-	    <li>{{this.dealer.city}},{{this.dealer.state}} {{this.dealer.postalCode}}</li>
-	    <li>{{this.dealer.phoneNumber}}</li>
-	  </ul>
-	  {{/each}}
+<div ng-controller="DealerController as dctrl" >
+	<div class="container container-fluid">
+		<h1>FIND A DEALER</h1>
+		<h2>Title: \{{dctrl.title}}</h2>
+		<h2>isPartial:{{isPartial}}</h2>
 
+		<div class="row">
+			{{#if isPartial}}
+		    <div class="col-md-6" ng-init="dctrl.dealers={{json dealers}}">
+		    <h1>Angular List</h1>
+		    	<div ng-repeat="dealer in dctrl.dealers"> 
+					<ul>
+						<li><strong>\{{dealer.name}}</strong></li>
+						<li>\{{dealer.address}}</li>
+						<li>\{{dealer.city}},\{{dealer.state}} \{{dealer.postalCode}}</li>
+						<li>\{{dealer.phoneNumber}}</li>
+						<li>\{{dealer.distance | number:2}} \{{dealer.distanceKind | lowercase}} away</li>
+					</ul>    		
+		    	</div>
+		  	</div>
+			{{else}}
+			<div class="col-md-6">
+				<h1>HBS List</h1>
+				{{#each dealers}}
+				<ul>
+					<li><strong>{{this.name}}</strong></li>
+					<li>{{this.address}}</li>
+					<li>{{this.city}},{{this.state}} {{this.postalCode}}</li>
+					<li>{{this.phoneNumber}}</li>
+					<li>{{toFixed this.distance 2}} {{lowercase this.distanceKind}} away</li>
+				</ul>
+				{{/each}}
+			</div>
+		  	{{/if}}
+		</div>
+
+	</div>
 </div>
-

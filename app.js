@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressHbs = require('express-handlebars');
+var helpers = require('./lib/helpers');
+var swag = require('swag');
 
 //route paths
 var routes = require('./routes/index');
@@ -15,8 +17,15 @@ process.env.PWD = process.cwd();
 app.use(express.static(path.join(process.env.PWD, 'public')));
 
 // view engine setup
+var hbs = expressHbs.create({
+    extname:'hbs',
+    helpers: helpers,
+    defaultLayout: 'cpo.hbs'
+});
+swag.registerHelpers(hbs.handlebars);
+
 app.set('views', path.join(__dirname, 'views'));
-app.engine('hbs', expressHbs({extname:'hbs'}));
+app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public

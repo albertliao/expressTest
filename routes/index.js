@@ -5,10 +5,14 @@ var glob = require("glob");
 var fs = require("fs");
 var extend = require('util')._extend
 var request = require('request');
+//var expstate = require('express-state');
+
+//var app = express;
+//enables .expose() function
+//expstate.extend(app);
 
 //load in CPO CMS data
 var cpoData = {};
-var partialData = {};
 glob("./data/**/*.json", function(err, files) {
     var loaded = 0;
     files.forEach(function(file) {
@@ -20,12 +24,10 @@ glob("./data/**/*.json", function(err, files) {
               return;
             }
             cpoData = extend(cpoData,JSON.parse(data));
-            partialData = extend(partialData,JSON.parse(data));
         });
         console.log(dir+"/"+filename+" loaded");
         loaded++;
     });
-    cpoData.layout = 'cpo.hbs';
     console.log(loaded + " files loaded");
 });
 
@@ -39,29 +41,31 @@ router.get('/home', function(req, res) {
 
 router.get('/dealer', function(req, res) {
 
-  // request('http://www.kia.com/us/en/data/dealers/inventory?itemsPerPage=10&pageNumber=1&radius=50&sendDealers=true&sendFilters=true&sendVehicles=true&series=optima&year=2015&zipCode=92627', function (error, response, body) {
-  //   if (!error && response.statusCode == 200) {
-  //     var data = JSON.parse(body);
-  //     var locals = {
-  //       "dealers": data.dealerInventoryResult[0].dealers,
-  //     };
-  //     //console.log(locals);
-  //     res.render('dealer', extend(cpoData,locals));
-  //   }
-  //   else {
-  //     console.log('error: '+ response.statusCode);
-  //     console.log(body);
-  //   }
-  // });
-
-  request('http://cpo.as8.cdev.kia.com:8081/cpo/dealer/getNear/92614/50', function (error, response, body) {
+  request('http://cpo.as8.cdev.kia.com:8081/cpo/dealer/getNear/92614/25', function (error, response, body) {
     if (!error && response.statusCode == 200) {
       var data = JSON.parse(body);
-      var locals = {
-        "dealers": data
-      };
-      //console.log(locals);
-      res.render('dealer', extend(cpoData,locals));
+
+      res.locals.dealers = data;
+      res.render('dealer', cpoData);
+    }
+    else {
+      console.log('error: '+ response.statusCode);
+      console.log(body);
+    }
+  });
+
+});
+
+router.get('/partials/dealer.hbs', function (req, res) {
+  res.locals.layout = '';
+  res.locals.isPartial = true;
+
+  request('http://cpo.as8.cdev.kia.com:8081/cpo/dealer/getNear/92614/25', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      var data = JSON.parse(body);
+
+      res.locals.dealers = data;
+      res.render('dealer', cpoData);
     }
     else {
       console.log('error: '+ response.statusCode);
@@ -81,11 +85,11 @@ router.get('/kiacareservice', function(req, res) {
 
 router.get('/partials/:name', function (req, res) {
   var name = req.params.name;
-  cpoData.layout = '';
-  res.render(name, cpoData);
 
-  //return to default layout
-  cpoData.layout = 'cpo.hbs';
+  res.locals.layout = '';
+  res.locals.isPartial = true;
+
+  res.render(name, cpoData);
 });
 
 router.get('*', function (req, res) {
