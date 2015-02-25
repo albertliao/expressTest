@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "serve": "nodemon ./bin/www",
+    "serve:prod": "node ./bin/www",
+    "serve:debug": "nodemon ./bin/www",
     "build:js": "browserify public/javascripts/app.js > public/javascripts/bundle.js",
-    "start": "npm run build:js && npm run serve"
+    "start": "npm run build:js && npm run serve:prod",
+    "debug": "npm run build:js && npm run serve:debug"
   },
   "dependencies": {
     "body-parser": "~1.10.2",
@@ -25,5 +27,9 @@
   "engines": {
     "node": "0.10.36",
     "npm": "2.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "nodemon": "^1.3.7"
   }
 }
